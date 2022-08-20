@@ -14,24 +14,29 @@
 }
 body{
     background-color: rgb(180, 221, 202);
-    overflow-x: hidden;
+   
     
 }
 .first{
-    width: 100%;
+    width: 100%; 
+    padding: 30px 0px 0px;
+}
+.first-containet{
+    width: 90%;
+    margin: 0px auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
-    flex-wrap: wrap;
 }
 .first img{
     width: 200px;  
 }
 .first input{
-    width: 700px;
+    padding-left: 36px;
+    width: 500px;
     height: 50px;
     border: 2px solid #000000;
+    font-size: 20px;
 }
 .first button{
     width: 130px;
@@ -39,12 +44,10 @@ body{
    border-radius: 5px;
    border: none;
    font-size: 20px;
-   margin-right: 10px;
+  margin-left: 26px;
    margin-top: 5px;
 }
-.first .navbar{
-    margin-left: -200px;
-}
+
 .first ::placeholder{
     position: absolute;
   margin-top: 5px;
@@ -156,61 +159,75 @@ body{
 
 
 
-.third-main{
+ .third-main{
     margin-top: 100px;
     background: rgb(238,255,247);
-    
     width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+   
+    padding: 20px 0px;
+    /* flex-wrap: wrap; */
 }
+
 .third-main .content h2{
     font-size: 60px;
     font-weight: 500;
-    text-align: center;
+   
     color: var(--main-color);
-    margin: 50px auto;
+    text-align: center;
 }
+
 .third-main-lower{
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    margin: 20px auto 50px;
+   display: flex;
+   gap: 10px;
+ 
 }
 
 .lower-left{
+    width: 50%;
+     padding-left: 10px;
+     margin: 0px auto;
     display: flex;
-    gap: 30px;
     flex-direction: column;
-    flex-wrap: wrap;
-    margin-left: 20px;
+    gap: 20px; 
 }
-.lower-up{
-    width: 850px;
-    height: 300px;
+.lower-right{
+    width: 50%;
+
+    height: auto;
+} 
+.lower-right img{
+    width: 100%;
+   height: 100%;
+    border-radius: 30px;
+  
+}
+ .lower-up{
+    width: 100%;
+    height: 50%;
     background-color: #23C4ED;
     border-radius: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+   
+  
 }
 .lower-up img{
+    width: 60%;
+    height: 60%;
    margin-top: -10px;
-   margin-left: -100px;
 }
 .lower-down{
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-.down-left , .down-right{
+     margin: 10px auto;
+    gap: 10px;
+    height: 50%;
+} 
+ .down-left , .down-right{
+    margin: 0px auto;
     background-color: #51E1ED;
-    width: 410px;
-    height: 320px;
+   width: 90%;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
@@ -219,22 +236,19 @@ body{
 }
 .down-right h1{
     margin-top: 50px;
+    text-align: center;
 }
 
 .third-main-lower h1{
     color: var(--main-color);
 }
 .third-main-lower h2{
+    text-align: center;
     color: var(--heading-color);
-}
+} 
 
-.lower-right img{
-    border-radius: 30px;
-    border: 50px solid linear-gradient(#00ccff,#d400d4);
-}
-.lower-right{
-    border: 50px solid linear-gradient(#00ccff,#d400d4);
-}
+
+ 
 
 
     
@@ -277,8 +291,7 @@ body{
     width: 100%;
     height: auto;
     background-color: rgb(247,247,255);
-   
-    margin: 100px 0px;
+    margin: 50px 0px;
     overflow-x: hidden;
 }
 .fifth-main h1{
@@ -286,8 +299,9 @@ body{
     font-weight: 500;
     text-align: center;
     color: var(--heading-color);
-    margin-top: 50px;
+    margin-top: 30px;
 }
+/* 
 @keyframes scroll {
     0%{
           transform: translateX(0);
@@ -300,7 +314,7 @@ body{
     height: 100px;
     width: auto;
     position: relative;
-   margin: 60px auto;
+   margin: 10px auto;
     overflow: hidden;
 }
 .slider .slide-track{
@@ -315,7 +329,7 @@ body{
 .slide img{
     background: transparent;
 }
-
+ */
 
 
 .six-main{
@@ -325,7 +339,7 @@ body{
     width: 100%;
     height: auto;
     margin-top: 100px auto;
-    /* background-color: antiquewhite; */
+     padding: 20px 0px;
 }
 .six-main h1{
     font-size: 60px;
@@ -340,14 +354,14 @@ body{
     flex-wrap: wrap;    /* important-point */
 }
 .six-main .fame{
-    margin-top: 50px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
    width: 400px;
    border: 2px solid #ffffff;
    height: 750px;
-   /* box-shadow: 2px 2px 10px 1px #808080; */
+   box-shadow: 2px 2px 10px 1px #808080;
    border-radius: 20px;
 }
 .six-main .fame:hover{
@@ -429,7 +443,7 @@ body{
 
 
 .seven{
-    margin: 100px auto 0px;
+    margin: 50px auto 0px;
     height: auto;
     /* width: 100%; */
     background-color:  rgb(242,247,255);
@@ -439,7 +453,8 @@ body{
     justify-content: center;
 }
 .seven h1{
-    margin-top: 50px;
+    text-align: center;
+    margin-top: 30px;
     font-size: 60px;
     font-weight: 500;
     color: var(--heading-color);
@@ -955,6 +970,9 @@ footer .footer-content{
     margin-top: 24px;
     margin-left: 25px;
 }
+.footer-last-right input{
+    padding-left: 20px;
+}
 
 .name{
     margin: 10px 20px 10px;
@@ -972,13 +990,18 @@ footer .footer-content{
     border: 2px solid #ffffff;
     border-radius: 5px;
 }
+.footer-last-right input , textarea{
+    padding-left: 30px;
+}
+.name:focus , textarea:focus{
+    color: red;
+    font-size: 20px;
+}
 .footer ::placeholder{
     font-size: 20px;
     font-weight: 100;
     color: #ffffff;
-    position: absolute;
-    margin-top: 10px;
-    margin-left: 30px;
+   
     
 }
 .footer input:focus , .footer textarea:focus{  /* important ponit , this will work whtn input is filled by user*/
@@ -988,59 +1011,63 @@ footer .footer-content{
     
 }
 
-@media screen and (max-width:2000px) {
-   .third-main{
-    /* background-color: red; */
-   }
-   .third-main-lower{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-   }
-   .lower-down , .down-left , .lower-down , .down-right{
-     margin-left: -5px; 
 
-   }
-    .lower-right img{
-        width: 89vw;
-       margin: 5px auto;
-    }
-}
-@media screen and (max-width:890px) {
+ @media screen and (max-width:890px) {
     .third-main{
-     /* background-color:black; */
+     
     }
     .third-main-lower{
+        padding: 20px 0px;
+     
+        width: 100%;
      display: flex;
-     flex-direction: row;
+     flex-direction: column;
      align-items: center;
      justify-content: center;
      text-align: center;
     
     }
+    .lower-left{
+     
+        width: 100%;
+    }
+   
+    .lower-down{
+       padding: 0px 10px;
+        width: 100%;
+    }
      .lower-right img{
-         width: 89vw;
+        
          margin-left: 1px;
      }
      .lower-up{
-        width: 600px;
+       width: 90%;
         margin: 5px auto;
      }
-     .lower-up img{
-        width: 240px;
-     }
+     
      .lower-down , .down-left , .lower-down , .down-right {
         margin: 5px auto;
      }
+     .lower-right{
+        padding: 0px 10px;
+        width: 100%;
+       
+     }
+ } 
+
+ @media screen and (max-width:450px) {
+    .lower-down {
+        flex-direction: column;
+    }
+    .lower-up , .down-left , .down-right{
+        width: 100%;
+        height: 300px;
+        background-color: #00ccff;
+    }
  }
 
  @media screen and (max-width:1150px){
-    /* .third-main{
-        background-color: red;
-    } */
+   
     .first{
         display: flex;
         flex-direction: column;
@@ -1053,10 +1080,9 @@ footer .footer-content{
         width: 500px;
     }
  }
- @media screen and (max-width:860px){
-    /* .third-main{
-        background-color: red;
-    } */
+
+ /* @media screen and (max-width:860px){
+   
     .upper-input{
         display: flex;
         flex-direction: column;
@@ -1082,7 +1108,7 @@ footer .footer-content{
         margin-left: -280px;
 
     }
-}
+} */
 @media screen and (max-width:992px){
     /* .third-main{
         background-color: red;
@@ -1122,9 +1148,9 @@ footer .footer-content{
     }
 }
 @media screen and (max-width:1430px){
-    .third-main{
+    /* .third-main{
         background-color: red;
-    }
+    } */
     .second2{
         width: 100%;
         display: flex;
@@ -1150,4 +1176,105 @@ footer .footer-content{
     }
   
 
+}
+@media screen and (max-width:400px){
+    .seven button{
+        width: 90%;
+        height: auto;
+        padding: 10px 30px;
+        font-size: 25px;
+        font-weight: 500;
+        margin: 25px auto;
+        border: 5px solid #ffffff;
+        border-radius: 12px;
+        background-color: transparent;
+    }
+   
+}
+/* @media screen and (max-width:430px){
+    .intro{
+        width: 100%;
+        height: auto;
+        background-color: #00ccff;
+        padding: 0px 20px;
+    }
+  .intro  .fame{
+        background-color: #ff0000;
+        margin-top: 10px;
+       width: 300px;
+    }
+} */
+@media screen and (max-width:1160px) {
+    .first-containet{
+        flex-direction: column;
+        gap: 20px;
+        
+    }
+    .first-containet input{
+        width: 600px;
+    }
+    
+}
+@media screen and (max-width:950px) {
+    .first-containet input{
+        width: 500px;
+    }
+    
+}
+@media screen and (max-width:850px) {
+    .first-containet input{
+        width: 400px;
+    }
+    
+}
+
+@media screen and (max-width:750px) {
+   .upper-input{
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+   }
+   .first-containet input{
+    width: 150%;
+}
+.upper-input img{
+    margin-left: -180px;
+}
+
+   
+}
+@media screen and (max-width:585px) {
+    .footer-last-right{
+   
+        flex-wrap: wrap;
+        width: 400px;
+        height: auto;
+        background: linear-gradient(rgba(0,0,0,0.4)50%,rgba(0,0,0,0.4)50%), var(--heading-color);
+        padding: 20px 10px;
+    }
+    .ten{
+        background-color: #00ccff;
+        padding: 0px 20px;
+    }
+    .ten .same2{
+        width: 100%;
+        height: auto;
+    
+    }
+    
+    .same2 h1{
+        text-align: center;
+    }
+    
+}
+@media screen and (max-width:480px) {
+    .footer-last-right{
+    margin-left: -10px;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        background: linear-gradient(rgba(0,0,0,0.4)50%,rgba(0,0,0,0.4)50%), var(--heading-color);
+        padding: 20px 10px;
+    }
+    
 }
