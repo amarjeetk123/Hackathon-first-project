@@ -993,10 +993,7 @@ footer .footer-content{
 .footer-last-right input , textarea{
     padding-left: 30px;
 }
-.name:focus , textarea:focus{
-    color: red;
-    font-size: 20px;
-}
+
 .footer ::placeholder{
     font-size: 20px;
     font-weight: 100;
